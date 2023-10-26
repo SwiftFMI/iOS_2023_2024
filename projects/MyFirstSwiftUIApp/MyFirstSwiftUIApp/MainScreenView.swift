@@ -6,11 +6,12 @@
 //
 
 import SwiftUI
+import Photos
 
 struct MainScreenView: View {
     var body: some View {
         VStack {
-            let _ = print("demo")
+//            let _ = print("demo")
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)

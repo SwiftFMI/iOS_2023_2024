@@ -4,10 +4,50 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>DemoMacOSApp.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>MyFirstSwiftUIApp.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>9ED1B50C2AD45A8C00B0CEFD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9ED1B51C2AD45A8F00B0CEFD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9ED1B5262AD45A8F00B0CEFD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9EFF9F222AE18A4E003B1932</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9EFF9F322AE18A51003B1932</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9EFF9F3C2AE18A53003B1932</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
