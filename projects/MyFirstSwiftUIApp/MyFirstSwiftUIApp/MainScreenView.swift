@@ -6,32 +6,40 @@
 //
 
 import SwiftUI
-import Photos
 
 struct MainScreenView: View {
+    @State var a = 1
+    
+    func myText() -> String {
+        "Hello Swift!"
+    }
+    
     var body: some View {
-        VStack {
-//            let _ = print("demo")
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Image(systemName: "square.and.arrow.up.trianglebadge.exclamationmark")
-                .foregroundColor(Color.orange)
-                
-            Text("Hello, swift!")
+        let _ = print("\(#function)")
+        if a > 5 {
+            Text(myText())
                 .foregroundColor(.red)
-                .background(Color.blue)
-            DatePicker(selection: /*@START_MENU_TOKEN@*/.constant(Date())/*@END_MENU_TOKEN@*/, label: { /*@START_MENU_TOKEN@*/Text("Date")/*@END_MENU_TOKEN@*/ })
-            Button {
-                print("hello!")
-            } label: {
-                Text("Hi")
+        } else {
+            VStack {
+//                InputView(.username)
+//                InputView(.password)
+                Button {
+                    print("Clicked")
+                    a += 1
+                } label: {
+                    Text("Button")
+//                        .background(Color.gray)
+//                        .foregroundColor(.red)
+                }
+//                .padding()
+//                .background(Color.gray)
+                .buttonStyle(.bordered)
+//                .cornerRadius(5.0)
+                
             }
-            .buttonStyle(.bordered)
-            .tint(.green)
-
+            .padding()
+            
         }
-        .padding()
     }
 }
 

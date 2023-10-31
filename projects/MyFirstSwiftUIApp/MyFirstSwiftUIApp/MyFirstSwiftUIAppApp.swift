@@ -12,7 +12,8 @@ struct MyFirstSwiftUIAppApp: App {
     
     var body: some Scene {
         WindowGroup {
-            MainScreenView()
+//            MainScreenView()
+            FirstScreenView()
         }
     }
 }
