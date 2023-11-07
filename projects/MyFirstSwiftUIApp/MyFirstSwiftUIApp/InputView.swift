@@ -48,12 +48,11 @@ struct InputView: View {
                 SecureField(prompt, text: $value)
                     .textFieldStyle(.roundedBorder)
             }
-            Button {
-                print("Value: \(value)")
-            } label: {
-                Text("Debug")
-            }
-
+//            Button {
+//                print("Value: \(value)")
+//            } label: {
+//                Text("Debug")
+//            }
         }
     }
 }

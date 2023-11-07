@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		9E744D422AEAC7130001DF8D /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E744D412AEAC7130001DF8D /* InputView.swift */; };
 		9E744D6C2AF166A80001DF8D /* FirstScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E744D6B2AF166A80001DF8D /* FirstScreenView.swift */; };
+		9E744D6E2AF303830001DF8D /* StackExampleUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E744D6D2AF303830001DF8D /* StackExampleUIView.swift */; };
+		9E98FF902AF4050100458B3B /* LoginScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E98FF8F2AF4050100458B3B /* LoginScreenView.swift */; };
 		9ED1B5112AD45A8C00B0CEFD /* MyFirstSwiftUIAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED1B5102AD45A8C00B0CEFD /* MyFirstSwiftUIAppApp.swift */; };
 		9ED1B5132AD45A8C00B0CEFD /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED1B5122AD45A8C00B0CEFD /* MainScreenView.swift */; };
 		9ED1B5152AD45A8F00B0CEFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ED1B5142AD45A8F00B0CEFD /* Assets.xcassets */; };
@@ -60,6 +62,8 @@
 /* Begin PBXFileReference section */
 		9E744D412AEAC7130001DF8D /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		9E744D6B2AF166A80001DF8D /* FirstScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenView.swift; sourceTree = "<group>"; };
+		9E744D6D2AF303830001DF8D /* StackExampleUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackExampleUIView.swift; sourceTree = "<group>"; };
+		9E98FF8F2AF4050100458B3B /* LoginScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenView.swift; sourceTree = "<group>"; };
 		9ED1B50D2AD45A8C00B0CEFD /* MyFirstSwiftUIApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstSwiftUIApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ED1B5102AD45A8C00B0CEFD /* MyFirstSwiftUIAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstSwiftUIAppApp.swift; sourceTree = "<group>"; };
 		9ED1B5122AD45A8C00B0CEFD /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
@@ -167,6 +171,8 @@
 				9ED1B5162AD45A8F00B0CEFD /* Preview Content */,
 				9E744D412AEAC7130001DF8D /* InputView.swift */,
 				9E744D6B2AF166A80001DF8D /* FirstScreenView.swift */,
+				9E744D6D2AF303830001DF8D /* StackExampleUIView.swift */,
+				9E98FF8F2AF4050100458B3B /* LoginScreenView.swift */,
 			);
 			path = MyFirstSwiftUIApp;
 			sourceTree = "<group>";
@@ -465,6 +471,8 @@
 				9ED1B5132AD45A8C00B0CEFD /* MainScreenView.swift in Sources */,
 				9ED1B5112AD45A8C00B0CEFD /* MyFirstSwiftUIAppApp.swift in Sources */,
 				9E744D6C2AF166A80001DF8D /* FirstScreenView.swift in Sources */,
+				9E98FF902AF4050100458B3B /* LoginScreenView.swift in Sources */,
+				9E744D6E2AF303830001DF8D /* StackExampleUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
