@@ -24,9 +24,12 @@ class ViewController: UIViewController {
 
 class ViewController2: UIViewController {
 
+    @IBOutlet weak var myButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+//        myButton.isHidden = true
     }
     
     @IBAction func handleHelloButton(_ sender: UIButton) {
