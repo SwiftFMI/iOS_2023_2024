@@ -8,34 +8,37 @@
 import SwiftUI
 
 
-class MainScreenViewModel: ObservableObject {
-    @Published var a = 1
-    
-    func increment() {
-        a += 1
-    }
-}
-
 struct MainScreenView: View {
 //    @State var a = 1
     @ObservedObject var viewModel = MainScreenViewModel()
     
 //    @State var items = ["Item 1", "Item 2", "Item 3"]
+    @State var items = [Car(name: "Item 1"),
+                        Car(name: "Item 2"),
+                        Car(name: "Item 3")]
     
     func myText() -> String {
 //        items.sor
+//        var kp = \MainScreenViewModel.car?.name
+//        var kpName = \Car.name
+//        var combined = kp.appending(path: kpName)
+//        viewModel[keyPath: kp] = "hello"
+//        viewModel.a
+//        items.map(\.name)
         return "Hello Swift!"
     }
     
     var body: some View {
         let _ = print("\(#function)")
         if viewModel.a > 5 {
-            Text(myText())
-                .foregroundColor(.red)
+            myTextView
         } else {
             VStack {
 //                InputView(.username)
 //                InputView(.password)
+                
+                TextField("username", text: $viewModel.username)
+                    .textFieldStyle(.roundedBorder)
                 Button {
                     print("Clicked")
                     viewModel.increment()
@@ -53,6 +56,11 @@ struct MainScreenView: View {
             .padding()
             
         }
+    }
+    
+    var myTextView: some View {
+        Text(myText())
+            .foregroundColor(.red)
     }
 }
 

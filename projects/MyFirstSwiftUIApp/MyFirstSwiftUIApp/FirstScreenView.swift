@@ -10,6 +10,10 @@ import SwiftUI
 struct FirstScreenView: View {
     @State var a = 0
     
+    func demo() {
+        var m: MySingleton = MySingleton.instance
+        
+    }
     
     var body: some View {
         let _ = print("SwiftUI executes our component body.")

@@ -17,9 +17,9 @@ struct InputView: View {
     var label: String = "Input:"
     var prompt: String = "your value"
     var isSecure = false
-    @State private var value: String = ""
+    @Binding var value: String
     
-    init(_ type: InputViewType) {
+    init(_ type: InputViewType, value: Binding<String>) {
         switch type {
         case .password:
             self.label = "Password:"
@@ -34,8 +34,8 @@ struct InputView: View {
             self.prompt = "your@email.com"
             self.isSecure = false
         }
-        
-        self.value = ""
+//        self.value = value
+        self._value = value
     }
     
     var body: some View {
@@ -58,5 +58,5 @@ struct InputView: View {
 }
 
 #Preview {
-    InputView(.password)
+    InputView(.username, value: .constant("user"))
 }

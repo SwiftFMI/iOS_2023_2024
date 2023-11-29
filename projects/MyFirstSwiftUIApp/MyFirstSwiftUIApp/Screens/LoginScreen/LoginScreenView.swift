@@ -8,32 +8,41 @@
 import SwiftUI
 
 struct LoginScreenView: View {
-    @State var isImageVisible = true
-    @State var isOverlayVisible = !true
+    @ObservedObject var viewModel = LoginScreenViewModel()
+    @State var myState = "Debug"
+    
+    @AppStorage("logins") var numberOfLogins = 0
+    
+    
+//    @EnvironmentObject var homeScreenViewModel: HomeScreenViewModel
     
     var body: some View {
         VStack(alignment: .leading) {
             Spacer()
-            if isImageVisible {
+            if viewModel.isImageVisible {
                 Image(.sampleAppsHero)
                     .resizable()
                     .frame(height: 100)
                     .scaledToFit()
             }
-                
-//                .aspectRatio(contentMode: .fit)
-                
+            Button {
+                myState += "+"
+            } label: {
+                Text(myState)
+            }
+            .buttonStyle(.bordered)
+
             Text("Some text goes here")
                 .frame(maxWidth: .infinity)
-                .multilineTextAlignment(.center)
-            LoginView {
-//                isImageVisible.toggle()
-                isOverlayVisible = true
-                DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute: {
-                    // code to execute
-                    isOverlayVisible = !true
-                })
+                .multilineTextAlignment(.center) 
+            LoginView { (username, password) in
+//                if viewModel.login(username: username, password: password) {
+//                    homeScreenViewModel.isLogged = true
+//                }
+                print("Old value: \(numberOfLogins)")
+                numberOfLogins += 1
             }
+//            .environmentObject(HomeScreenViewModel())
             Spacer()
                 .frame(height: 50)
             Text("Forget Password")
@@ -46,7 +55,7 @@ struct LoginScreenView: View {
         .padding()
         .foregroundColor(.black)
         .overlay {
-            if isOverlayVisible {
+            if viewModel.isOverlayVisible {
                 VStack {
                     Spacer()
                     HStack() {
@@ -67,21 +76,4 @@ struct LoginScreenView: View {
     LoginScreenView()
 }
 
-struct LoginView: View {
-    var action: () -> ()
-    var body: some View {
-        VStack(alignment: .leading) {
-            InputView(.username)
-            InputView(.password)
-            Button {
-                print("Login now!")
-                action()
-            } label: {
-                Text("Login")
-            }
-            .buttonStyle(.bordered)
 
-        }
-        
-    }
-}
