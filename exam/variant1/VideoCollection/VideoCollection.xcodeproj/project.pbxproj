@@ -17,9 +17,9 @@
 		9E25EBEA2B2A1DE00011BE0A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E25EBE92B2A1DE00011BE0A /* Model.swift */; };
 		9E25EBED2B2AE8380011BE0A /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E25EBEC2B2AE8380011BE0A /* CollectionView.swift */; };
 		9E25EBEF2B2AE8E00011BE0A /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E25EBEE2B2AE8E00011BE0A /* VideoView.swift */; };
-		9E25EBF42B2AEC4E0011BE0A /* earth.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9E25EBF12B2AEC4E0011BE0A /* earth.mp4 */; };
-		9E25EBF52B2AEC4E0011BE0A /* notebook.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9E25EBF22B2AEC4E0011BE0A /* notebook.mp4 */; };
-		9E25EBF62B2AEC4E0011BE0A /* keyboard.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9E25EBF32B2AEC4E0011BE0A /* keyboard.mp4 */; };
+		9E7B82182B2B629A008BB657 /* notebook.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9E7B82152B2B629A008BB657 /* notebook.mp4 */; };
+		9E7B82192B2B629A008BB657 /* earth.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9E7B82162B2B629A008BB657 /* earth.mp4 */; };
+		9E7B821A2B2B629A008BB657 /* keyboard.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9E7B82172B2B629A008BB657 /* keyboard.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,9 +54,10 @@
 		9E25EBEB2B2AE7190011BE0A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9E25EBEC2B2AE8380011BE0A /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
 		9E25EBEE2B2AE8E00011BE0A /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
-		9E25EBF12B2AEC4E0011BE0A /* earth.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = earth.mp4; path = ../../../../../../../../../Downloads/earth.mp4; sourceTree = "<group>"; };
-		9E25EBF22B2AEC4E0011BE0A /* notebook.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = notebook.mp4; path = ../../../../../../../../../Downloads/notebook.mp4; sourceTree = "<group>"; };
-		9E25EBF32B2AEC4E0011BE0A /* keyboard.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = keyboard.mp4; path = ../../../../../../../../../Downloads/keyboard.mp4; sourceTree = "<group>"; };
+		9E7B82152B2B629A008BB657 /* notebook.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = notebook.mp4; sourceTree = "<group>"; };
+		9E7B82162B2B629A008BB657 /* earth.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = earth.mp4; sourceTree = "<group>"; };
+		9E7B82172B2B629A008BB657 /* keyboard.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = keyboard.mp4; sourceTree = "<group>"; };
+		9E7B821B2B2B62EA008BB657 /* videoCollection.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = videoCollection.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +115,7 @@
 				9E25EBC12B2A1D5B0011BE0A /* Assets.xcassets */,
 				9E25EBC32B2A1D5B0011BE0A /* Preview Content */,
 				9E25EBEB2B2AE7190011BE0A /* README.md */,
+				9E7B821B2B2B62EA008BB657 /* videoCollection.png */,
 			);
 			path = VideoCollection;
 			sourceTree = "<group>";
@@ -164,9 +166,9 @@
 		9E25EBF02B2AEC440011BE0A /* Videos */ = {
 			isa = PBXGroup;
 			children = (
-				9E25EBF12B2AEC4E0011BE0A /* earth.mp4 */,
-				9E25EBF32B2AEC4E0011BE0A /* keyboard.mp4 */,
-				9E25EBF22B2AEC4E0011BE0A /* notebook.mp4 */,
+				9E7B82162B2B629A008BB657 /* earth.mp4 */,
+				9E7B82172B2B629A008BB657 /* keyboard.mp4 */,
+				9E7B82152B2B629A008BB657 /* notebook.mp4 */,
 			);
 			path = Videos;
 			sourceTree = "<group>";
@@ -275,11 +277,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E25EBF62B2AEC4E0011BE0A /* keyboard.mp4 in Resources */,
-				9E25EBF52B2AEC4E0011BE0A /* notebook.mp4 in Resources */,
+				9E7B821A2B2B629A008BB657 /* keyboard.mp4 in Resources */,
+				9E7B82192B2B629A008BB657 /* earth.mp4 in Resources */,
 				9E25EBC52B2A1D5B0011BE0A /* Preview Assets.xcassets in Resources */,
 				9E25EBC22B2A1D5B0011BE0A /* Assets.xcassets in Resources */,
-				9E25EBF42B2AEC4E0011BE0A /* earth.mp4 in Resources */,
+				9E7B82182B2B629A008BB657 /* notebook.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
