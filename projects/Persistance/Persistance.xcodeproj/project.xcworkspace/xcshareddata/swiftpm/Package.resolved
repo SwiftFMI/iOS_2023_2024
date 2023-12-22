@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "keychainstored",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/owowagency/KeychainStored",
+      "state" : {
+        "revision" : "a5a1fccec6fe279fc244e37a7190c92ec15bf456",
+        "version" : "1.1.0"
+      }
+    }
+  ],
+  "version" : 2
+}
